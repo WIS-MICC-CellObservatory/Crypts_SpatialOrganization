@@ -5,11 +5,11 @@
 Segment colon crypts from z-projection of SHG images of fibrillar collagen and Quantify fibrosis by analyzing the spatial organization of the crypts.
 
 This macro was used in:  <br/> <br/>
-<p style="text-align: center;">
+<p align="center">
 	<strong>Heat Shock Factor 1-dependent extracellular matrix remodeling mediates the transition from chronic intestinal inflammation to colon cancer </strong><br/> <br/>
 	</p>
 	
-<p style="text-align: center;">
+<p align="center">
 	<strong>Oshrat Levi-Galibov, Hagar Lavon, Meirav Pevsner-Fischer, Shimrit Mayer, Rina Wassermann-Dozorets, Esther Wershof, Yaniv Stein, Gil Friedman, Reinat Nevo,
 Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
@@ -97,25 +97,21 @@ and calculate theier updated measurements.
 The ROIs are read either from manually corrected file (FN_RoiSet_Manual.zip if exist) or otherwise from the original file (FN_RoiSet.zip)
 see further instructions below 
   
-Manual Correction Instructions
-==============================
+### Manual Correction Instructions
 - Open the original image (FN)
 - make sure there is no RoiManager open
 - drag-and-drop the "FN_RoiSet.zip" into Fiji main window 
 - in RoiManager: make sure that "Show All" is selected. Ususaly it is more conveinient to unselect Labels 
   
-Select A ROI
-------------
+#### Select A ROI
 - You can select a ROI from the ROIManager or with long click inside a ring to select its outer ROI (with the Hand-Tool selected in Fiji main window), 
   this will highlight the (outer) ROI in the RoiManager, the matching inner Roi is just above it
    
-Delete falsely detected objects
--------------------------------
+#### Delete falsely detected objects
 - select a ROI
 - click "Delete" to delete a ROI. 
   
-Fix segmentation error 
-----------------------
+#### Fix segmentation error 
 - select a ROI
 - you can update it eg by using the brush tool (deselecting Show All may be more convnient) 
 - Hold the shift key down and it will be added to the existing selection. Hold down the alt key and it will be subracted from the existing selection
@@ -123,26 +119,22 @@ Fix segmentation error
   
 - otherwise you can delete the ROI (see above) and draw another one instead (see below)
   
-Add non-detected Ring
----------------------
+#### Add non-detected Ring
 - You can draw a ROI using one of the drawing tools 
 - an alternative can be using the Wand tool , you'll need to set the Wand tool tolerance first by double clicking on the wand tool icon. 
   see also: https://imagej.nih.gov/ij/docs/tools.html
 - click 't' from the keyboard or "Add" from RoiManger to add it to the RoiManager 
   
-Save ROIs
----------
+#### Save ROIs
 When done with all corrections make sure to 
 - from the RoiManager, click "Deselect" 
 - from the RoiManager, click "More" and then "Save" , save the updated file into a file named as the original Roi file with suffix "_Manual":  
   "FN_RoiSet_Manual.zip", using correct file name is crucial
     
-Run in Update Mode
-------------------
+#### Run in Update Mode
 - when done with correction run the macro again, and change "RunMode" to be "Update" (instead of "Segment"
  
-Notes Regarding Ilastik Classifier
-==================================
+## Notes Regarding Ilastik Classifier
 - If your data include images with different contrast, make sure to include  representative images of all conditions When training the classifier
 - It is assumed that all images have the same pixel size, identical to that used for training (here it is 0.416 um/pixel). It is not checked however. 
   up to 20% (PixelSizeCheckFactor) different from the pixel size used for training the Ilastik classifier (PixelSizeUsedForIlastik)
