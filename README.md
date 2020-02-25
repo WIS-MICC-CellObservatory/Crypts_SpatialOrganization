@@ -5,11 +5,11 @@
 Segment colon crypts from z-projection of SHG images of fibrillar collagen and Quantify fibrosis by analyzing the spatial organization of the crypts.
 
 This macro was used in:  <br/> <br/>
-< p align="center">
+<p/ align="center">
 	<strong>Heat Shock Factor 1-dependent extracellular matrix remodeling mediates the transition from chronic intestinal inflammation to colon cancer </strong><br/> <br/>
 	</p>
 	
-< p align="center">
+<p/ align="center">
 	<strong>Oshrat Levi-Galibov, Hagar Lavon, Meirav Pevsner-Fischer, Shimrit Mayer, Rina Wassermann-Dozorets, Esther Wershof, Yaniv Stein, Gil Friedman, Reinat Nevo,
 Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
