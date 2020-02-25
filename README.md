@@ -1,4 +1,4 @@
-# Spatial organization of Colon Crypts from second harmonic generation (SHG) images of fibrillar collagen of mouse colons  
+# Spatial organization of Colon Crypts from Second Harmonic Generation (SHG) images of fibrillar collagen of mouse colons  
 
 ## Overview
 
