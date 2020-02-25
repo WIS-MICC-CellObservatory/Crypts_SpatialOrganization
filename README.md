@@ -31,22 +31,18 @@ The macro relies on (auto-context) pixel classification with Ilastik, it assumes
 
 1. Open selected image
 2. Segment the crypts
-	a. Apply Ilastik pixels classification to get Probability map (and save it to output folder)
-  	b. Smooth the crypt prediction probabilities using gaussian bluhr (sigma=2) 
-  	c. Use Hysteresis Thresholding on the crypt prediction probabilities to get labeled mask of candidate crypt objects
-  	d. Fill holes in candidate Crypt objects
-  	e. Filter candidate Crypt objects by size (>300 um^2) and Circularity (>0.1)
-  	f. Save the segmented ROIS, the labeled image and original image with overlay of the segmentation
+- Apply Ilastik pixels classification to get Probability map (and save it to output folder)
+- Smooth the crypt prediction probabilities using gaussian bluhr (sigma=2) 
+- Use Hysteresis Thresholding on the crypt prediction probabilities to get labeled mask of candidate crypt objects
+- Fill holes in candidate Crypt objects
+- Filter candidate Crypt objects by size (>300 um^2) and Circularity (>0.1)
+- Save the segmented ROIS, the labeled image and original image with overlay of the segmentation
 3. Perform spatial analysis
-  	a. calculate border-to-border distances between crypts (just as a way to save computation time) 
-  	b. calculate border-to-border (b2b) distances to CCNN (=8) closest crypts
-  	c. for each crypt measure: 
-  		- size, 
-  		- b2b distance to closest crypt, 
-  		- average b2b distance to 3 closest crypts, 
-  		- number of crypts for which b2b distance is smaller than DistToCheckNN (=20um)
-  	d. calculate average values for all crypts in the image and add line with averge values to the summary table
-  	e. save images color-coded with the above measures
+- Calculate border-to-border distances between crypts (just as a way to save computation time) 
+- Calculate border-to-border (b2b) distances to CCNN (=8) closest crypts
+- For each crypt measure: size, b2b distance to closest crypt, average b2b distance to 3 closest crypts, number of crypts for which b2b distance is smaller than DistToCheckNN (=20um)
+- Calculate average values for all crypts in the image and add line with averge values to the summary table
+- Save images color-coded with the above measures
   	
 ## Output
 
