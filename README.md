@@ -5,11 +5,11 @@
 Segment colon crypts from z-projection of SHG images of fibrillar collagen and Quantify fibrosis by analyzing the spatial organization of the crypts.
 
 This macro was used in:  <br/> <br/>
-</p align="center">
+<p align="center">
 	<strong>Heat Shock Factor 1-dependent extracellular matrix remodeling mediates the transition from chronic intestinal inflammation to colon cancer </strong><br/> <br/>
 	</p>
 	
-</p align="center">
+<p align="center">
 	<strong>Oshrat Levi-Galibov, Hagar Lavon, Meirav Pevsner-Fischer, Shimrit Mayer, Rina Wassermann-Dozorets, Esther Wershof, Yaniv Stein, Gil Friedman, Reinat Nevo,
 Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
@@ -21,9 +21,9 @@ Workflow language: ImageJ macro
 Written by: Ofra Golani at the MICC Cell Observatory, Weizmann Institute of Science
 In collaboration with Oshrat Galibov-Levi, Ruth Scherz-Shouval, Weizmann Institute of Science
 
-![Example input](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20.png =250x250)
-![Example Dist to closest neighbor](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_BB_Dist_BBNN1_Flatten.png =250x250)
-![Example Num Neighbors within 20um](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_NumNeighbWithinDist_Flatten.png =250x250)
+![Example input](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20.png width="250" title="Input")
+![Example Dist to closest neighbor](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_BB_Dist_BBNN1_Flatten.png width="350" title="Dist to Closest Crypt")
+![Example Num Neighbors within 20um](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_NumNeighbWithinDist_Flatten.png width="350" title="Num Neighbours within 20um")
 
 It assumes that the samples are carefully posioned and sectioned so that z-projection capture their shape correctly, and that z-projection was done prior to running the macro
 The macro relies on (auto-context) pixel classification with Ilastik, it assumes that the given classifier was trained to predict fibrillar collagen (first class) vs crypt (second class)
