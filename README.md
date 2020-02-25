@@ -5,11 +5,11 @@
 Segment colon crypts from z-projection of SHG images of fibrillar collagen and Quantify fibrosis by analyzing the spatial organization of the crypts.
 
 This macro was used in:  <br/> <br/>
-<p align="center">
+<p style="text-align: center;">
 	<strong>Heat Shock Factor 1-dependent extracellular matrix remodeling mediates the transition from chronic intestinal inflammation to colon cancer </strong><br/> <br/>
 	</p>
 	
-<p align="center">
+<p style="text-align: center;">
 	<strong>Oshrat Levi-Galibov, Hagar Lavon, Meirav Pevsner-Fischer, Shimrit Mayer, Rina Wassermann-Dozorets, Esther Wershof, Yaniv Stein, Gil Friedman, Reinat Nevo,
 Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
@@ -17,10 +17,6 @@ Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, Dav
 Software package: Fiji (ImageJ)
 
 Workflow language: ImageJ macro
-
-Written by: Ofra Golani at the MICC Cell Observatory, Weizmann Institute of Science
-In collaboration with Oshrat Galibov-Levi, Ruth Scherz-Shouval, Weizmann Institute of Science
-
 
 <p align="center">
 <img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20.png" width="250" title="Input">
