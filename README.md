@@ -24,15 +24,9 @@ In collaboration with Oshrat Galibov-Levi, Ruth Scherz-Shouval, Weizmann Institu
 
 <p align="center">
 <img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20.png" width="250" title="Input">
-<img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_BB_Dist_BBNN1_Flatten.png" width="350" title="Dist to Closest Crypt">
-<img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_NumNeighbWithinDist_Flatten.png" width="350" title="Num Neighbours within 20um">
+<img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_BB_Dist_BBNN1_Flatten.png" width="250" title="Dist to Closest Crypt">
+<img src="https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_NumNeighbWithinDist_Flatten.png" width="250" title="Num Neighbours within 20um">
 	</p>
-
-
-
-![Example input](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20.png width="250" title="Input")
-![Example Dist to closest neighbor](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_BB_Dist_BBNN1_Flatten.png width="350" title="Dist to Closest Crypt")
-![Example Num Neighbors within 20um](https://github.com/WIS-MICC-CellObservatory/Crypts_SpatialOrganization/blob/master/SampleData/Out/Hsf1_null_day20_NumNeighbWithinDist_Flatten.png width="350" title="Num Neighbours within 20um")
 
 It assumes that the samples are carefully posioned and sectioned so that z-projection capture their shape correctly, and that z-projection was done prior to running the macro
 The macro relies on (auto-context) pixel classification with Ilastik, it assumes that the given classifier was trained to predict fibrillar collagen (first class) vs crypt (second class)
