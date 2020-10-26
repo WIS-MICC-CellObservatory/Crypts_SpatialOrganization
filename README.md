@@ -48,7 +48,7 @@ The macro relies on (auto-context) pixel classification with Ilastik, it assumes
 
 The macro saves the following output files for each image (eg with name FN) in a subfolder (ResultsSubFolder) under the original folder location:  
 - All ROIs (FN_RoiSet.zip)
-- The original image with overlay of the segmented rings (FN_Overlay.tif) 
+- The original image with overlay of the segmented crypts (FN_Overlay.tif) 
 - Result table with (FN_DistTable.csv) : one line for each crypt with all the calculated values
 - Images of the segmented crypts color-coded by the closest dist (FN_BB_Dist_BBNN1_Flaten.tif), average dist to 3 closest crypts (FN_BB_AvgDist_BBNN3_Flaten.tif),  
   number of neighbor within dist (FN_NumNeighbWithinDist_Flatten.tif) 
@@ -99,7 +99,7 @@ The ROIs are read either from manually corrected file (FN_RoiSet_Manual.zip if e
 - in RoiManager: make sure that "Show All" is selected. Ususaly it is more conveinient to unselect Labels 
   
 ### Select A ROI
-- You can select a ROI from the ROIManager or with long click inside a ring to select its outer ROI (with the Hand-Tool selected in Fiji main window), 
+- You can select a ROI from the ROIManager or with long click inside a crypt to select its outer ROI (with the Hand-Tool selected in Fiji main window), 
   this will highlight the (outer) ROI in the RoiManager, the matching inner Roi is just above it
    
 ### Delete falsely detected objects
@@ -114,7 +114,7 @@ The ROIs are read either from manually corrected file (FN_RoiSet_Manual.zip if e
   
 - otherwise you can delete the ROI (see above) and draw another one instead (see below)
   
-### Add non-detected Ring
+### Add non-detected Crypt
 - You can draw a ROI using one of the drawing tools 
 - an alternative can be using the Wand tool , you'll need to set the Wand tool tolerance first by double clicking on the wand tool icon. 
   see also: https://imagej.nih.gov/ij/docs/tools.html
