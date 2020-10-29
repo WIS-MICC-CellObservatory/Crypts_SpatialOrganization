@@ -10,8 +10,8 @@ This macro was used in:  <br/> <br/>
 	</p>
 	
 <p align="center">
-	<strong>Oshrat Levi-Galibov, Hagar Lavon, Meirav Pevsner-Fischer, Shimrit Mayer, Rina Wassermann-Dozorets, Esther Wershof, Yaniv Stein, Gil Friedman, Reinat Nevo,
-Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
+	<strong>Oshrat Levi-Galibov, Hagar Lavon, Rina Wassermann-Dozorets, Meirav Pevsner-Fischer, Shimrit Mayer, Esther Wershof, Yaniv Stein, Lauren Brown, Gil Friedman, Reinat Nevo,
+Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, John A. Porco, Jr, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
 
 Software package: Fiji (ImageJ)
@@ -32,16 +32,16 @@ The macro relies on (auto-context) pixel classification with Ilastik, it assumes
 1. Open selected image
 2. Segment the crypts
 - Apply Ilastik pixels classification to get Probability map (and save it to output folder)
-- Smooth the crypt prediction probabilities using gaussian bluhr (sigma=2) 
+- Smooth the crypt prediction probabilities using gaussian blur (sigma=2) 
 - Use Hysteresis Thresholding on the crypt prediction probabilities to get labeled mask of candidate crypt objects
 - Fill holes in candidate Crypt objects
 - Filter candidate Crypt objects by size (>300 um^2) and Circularity (>0.1)
 - Save the segmented ROIS, the labeled image and original image with overlay of the segmentation
 3. Perform spatial analysis
 - Calculate border-to-border distances between crypts (just as a way to save computation time) 
-- Calculate border-to-border (b2b) distances to CCNN (=8) closest crypts
-- For each crypt measure: size, b2b distance to closest crypt, average b2b distance to 3 closest crypts, number of crypts for which b2b distance is smaller than DistToCheckNN (=20um)
-- Calculate average values for all crypts in the image and add line with averge values to the summary table
+- Calculate border-to-border (b2b) distances to the N Center-to-Center closet crypts (CCNN=8) 
+- For each crypt measure: size (um2), b2b distance to closest crypt, average b2b distance to 3 closest crypts, number of crypts for which b2b distance is smaller than DistToCheckNN (=20um)
+- Calculate average values for all crypts in the image and add line with number of crypts (including border-touching crypts) and average values to the summary table
 - Save images color-coded with the above measures
   	
 ## Output
@@ -70,9 +70,9 @@ To install them in Fiji:
  - Click “Apply changes”
 
 ##  Usage Instructions
-Make sure Fiji Ilastik Plugin is installed in your Fiji (see dependencies below)
+Make sure Fiji Ilastik Plugin is installed in your Fiji (see dependencies above)
 Drag and Drop the Macro into Fiji 
-Click "Run" , this will envoke a window asking you to set parameters: 
+Click "Run" , this will open a window asking you to set parameters: 
 - Set RunMode to "Segment"
 - Select if you want to process Single File or Whole folder 
 - Use Browse to select the File_name to analyze (or File within the folder that you want to analyze)
@@ -88,8 +88,7 @@ you can use previous ilastik clasification by checking "CheckForExistingIlastikO
 ##  Manual Correction
 The above automatic process segment correctly most of the crypts. 
 Further manual correction is supported by switching from Segment Mode to Update Mode.   
-In Update mode the macro skips the segmentation step 2 above, instead it gets the segmented ROIS from a file, 
-and calculate theier updated measurements. 
+In Update mode the macro skips the segmentation step 2 above, instead it gets the segmented ROIS from a file, and calculate their updated measurements. 
 The ROIs are read either from manually corrected file (FN_RoiSet_Manual.zip if exist) or otherwise from the original file (FN_RoiSet.zip)
 
 ### To start manual correction: 
@@ -127,7 +126,7 @@ When done with all corrections make sure to
   "FN_RoiSet_Manual.zip", using correct file name is crucial
     
 ### Run in Update Mode
-- when done with correction run the macro again, and change "RunMode" to be "Update" (instead of "Segment"
+- when done with correction run the macro again, and change "RunMode" to be "Update" (instead of "Segment")
  
 ## Notes Regarding Ilastik Classifier
 - If your data include images with different contrast, make sure to include  representative images of all conditions When training the classifier
