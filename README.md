@@ -10,7 +10,7 @@ This macro was used in:  <br/> <br/>
 	</p>
 	
 <p align="center">
-	<strong>Oshrat Levi-Galibov, Hagar Lavon, Rina Wassermann-Dozorets, Meirav Pevsner-Fischer, Shimrit Mayer, Esther Wershof, Yaniv Stein, Lauren Brown, Gil Friedman, Reinat Nevo,
+	<strong>Oshrat Levi-Galibov, Hagar Lavon, Rina Wassermann-Dozorets, Meirav Pevsner-Fischer, Shimrit Mayer, Esther Wershof, Yaniv Stein, Lauren Brown, Wenhan Zhang, Gil Friedman, Reinat Nevo,
 Ofra Golani, Lior Katz, Rona Yaeger, Ido Laish, John A. Porco, Jr, Erik Sahai, Dror S. Shouval, David Kelsen and Ruth Scherz-Shouval </strong><br/> <br/>
 	</p>
 
