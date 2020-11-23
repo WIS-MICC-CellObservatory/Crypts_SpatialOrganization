@@ -58,7 +58,7 @@ The macro saves the following output files for each image (eg with name FN) in a
 ## Dependencies
 - Fiji: https://imagej.net/Fiji
 - Ilastik pixel classifier (ilastik-1.3.3post1) https://www.ilastik.org/ 
-- Ilastik Fiji Plugin (we used Ilastik4ij1.7.0.jar which you can in: https://sites.imagej.net/Ilastik/plugins/ this one works with the autocontext pixel classifier that we trained, the latest version supports only "regular" ilastik pixel classifier)
+- Ilastik Fiji Plugin (we used Ilastik4ij1.7.0.jar which is available in: https://sites.imagej.net/Ilastik/plugins/ this one works with the autocontext pixel classifier that we trained, the latest version supports only "regular" ilastik pixel classifier)
 - 3D suite plugin: make sure you have 3.94 (at least) : http://imagejdocu.tudor.lu/doku.php?id=plugin:stacks:3d_ij_suite:start#download 
 - MorphoLibJ plugin: https://imagej.net/MorphoLibJ 
 
